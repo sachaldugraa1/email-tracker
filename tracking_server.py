@@ -11,7 +11,7 @@ SCOPE = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 SPREADSHEET_ID = "1a5dLnc8gSCod5Uj_YsdRVYE6fOuDjeJx-F-Hfxd5O8Y"
 
 # ✅ Load Google Credentials from Railway ENV
-creds_json = os.getenv("ytscript.json")
+creds_json = os.getenv("GOOGLE_CREDENTIALS")
 
 if not creds_json:
     raise ValueError("❌ GOOGLE_CREDENTIALS environment variable not found!")
